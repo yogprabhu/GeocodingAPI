@@ -48,7 +48,7 @@ if __name__ == '__main__':
         print("""
             Please supply an api key, then one or more image filenames
 
-            $ python cloudvisreq.py api_key image1.jpg image2.png""")
+            $ python googleVisionAPI.py api_key image1.jpg image2.png""")
     else:
         response = request_ocr(api_key, image_filenames)
         if response.status_code != 200 or response.json().get('error'):
